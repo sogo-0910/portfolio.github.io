@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <!-- ハンバーガーメニュー -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('.navToggle').click(function() {
+      $(this).toggleClass('active');
+      if ($(this).hasClass('active')) {
+      $('.globalMenuSp').addClass('active');
+    } else {
+      $('.globalMenuSp').removeClass('active');
+    }
+    });
+    });
+  </script>
+ <!-- スライドショー -->
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+    $('.bxslider').bxSlider({
+    auto:true,
+    mode:'fade',
+    speed:'300'
+    });
+    });
+  </script>
+ <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+  <script>
+      $(function() {
+      $('.list-mv04').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+      if(isInView){
+      $(this).stop().addClass('mv04');
+      }
+      });
+      });
+  </script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+<body>
+<header class="header">
+  <a href="index.html"><img src="img/logo4.png" alt="cafe de parisのロゴ"></a>
+  <div class="header-right">
+    <div class="navToggle">
+      <span></span><span></span><span></span><span>menu</span>
+    </div>
+  
+    <nav class="globalMenuSp">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="access.html">ACCESS</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="index">
+  
+  <ul class="bxslider pc">
+    <li><img src="img/mv3.jpg" alt="Cafe de PARIS"></li>
+    <li><img src="img/mv2.jpg" alt="Cafe de PARIS"></li>
+    <li><img src="img/mv1.jpg" alt="Cafe de PARIS"></li>
+  </ul>
+  <ul class="bxslider ipad">
+    <li><img src="img/mv3-ipad.jpg" alt="Cafe de PARIS"></li>
+    <li><img src="img/mv2-ipad.jpg" alt="Cafe de PARIS"></li>
+    <li><img src="img/mv1-ipad.jpg" alt="Cafe de PARIS"></li>
+  </ul>
+  <ul class="bxslider mobile">
+    <li><img src="img/mv3-mobile.jpg" alt="Cafe de PARIS"></li>
+    <li><img src="img/mv2-mobile.jpg" alt="Cafe de PARIS"></li>
+    <li><img src="img/mv1-mobile.jpg" alt="Cafe de PARIS"></li>
+  </ul>
+
+  <p>いつもを<br>
+    すてきに<br>
+    かえていく</p>
+</main>
+
+<div id="index-news">
+  <h1 class="list-mv04">News</h1><br>
+  <div id="news-icon">
+    <div class="icon">
+      <p class="date">2020/11/18</p>
+      <div class="sample5">  
+        <a href=""><img src="img/news1.png" alt="cafe de paris"></a>
+        <div class="mask">
+          <div class="caption">read more!! <br>→</div>
+          </div>
+      </div>
+      <p id="text">新規サイトオープン企画<br>Webサイトを見て特製ケーキをもらおう！</p>
+    </div>
+      
+    <div class="icon">
+      <p class="date">2020/11/10</p>
+      <div class="sample5">  
+        <a href=""><img src="img/news2.png" alt="cafe de paris"></a>
+        <div class="mask">
+          <div class="caption">read more!!<br>→</div>
+        </div>
+      </div>
+      <p id="text">新作マカロン登場！！</p>
+    </div>
+
+    <div class="icon">
+      <p class="date">2020/11/03</p>
+      <div class="sample5">  
+        <a href=""><img src="img/news4.png" alt="cafe de paris"></a>
+        <div class="mask">
+          <div class="caption">read more!!<br>→</div>
+        </div>
+      </div>
+      <p id="text">お待たせ致しました！カフェ・ド・パリ<br>Webサイトをオープン致しました。</p>  　
+      </div>
+    </div>
+      
+    <p class="btn"><a href="" class="a-news-button">READ MORE →</a></p>
+</div>
+
+<div id="index-about">
+  <div id="kuro">
+    <h1 class="list-mv04">Cafe de PARIS</h1>
+    <h2>お店のご紹介</h2>
+    <p>
+      Cafe de PARISのお店の特徴を紹介します。<br>
+      お店のこだわり、お店で使用しているコーヒーや食材についてご紹介しています。 <br>
+      また最近Cafe de PARISの公式INSTAGRAMがスタートしました。<br>
+      カフェのイベント情報などの告知もしていますので是非ご覧ください。
+    </p>
+    <p class="btn"><a href="about.html" class="a-about-button">READ MORE →</a></p>
+  </div>
+</div>
+        
+        
+<div id="index-menu">
+  <h1 class="list-mv04">Menu</h1>
+  <section>
+    <a href="menu.html#mm"><img src="img/menu1.png" alt="Cafe de PARISのメニュー"></a>
+    <a href="menu.html#drink"><img src="img/menu2.png" alt="Cafe de PARISのメニュー"></a>
+    <a href="menu.html#lm"><img src="img/menu3.png" alt="Cafe de PARISのメニュー"></a>
+    <a href="menu.html#pasta"><img src="img/menu4.png" alt="Cafe de PARISのメニュー"></a>
+    <a href="menu.html#dessert"><img src="img/menu5.png" alt="Cafe de PARISのメニュー"></a>
+    <a href="menu.html#alcohol"><img src="img/menu6.png" alt="Cafe de PARISのメニュー"></a>
+  </section>
+</div>
+
+<div id="index-access">
+  <h1 class="list-mv04">ACCESS</h1>
+  <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12961.61913227986!2d139.6969368!3d35.6916554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee411b3fa3fc9f13!2zSEFM5p2x5Lqs!5e0!3m2!1sja!2sjp!4v1607140043461!5m2!1sja!2sjp" width="45%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="access-p">
+      <h3>Cafe de Paris</h3>
+      <p>〒123-4567</p>
+      <p>東京都新宿区西新宿3-11-3</p>
+      <p>TEL : 04-6666-7777</p>
+      <p>定休日 : 火曜日</p>
+      <p>営業時間 : 7:00~22:00</p>
+      <p>新宿駅西口から徒歩5分</p>
+      <div>
+        <p><a href=""><i class="fab fa-instagram"></i></a></p>
+        <p><a href=""><i class="fab fa-facebook-square"></i></a></p>
+      </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <a href="index.html"><img src="img/logo4.png" alt=""></a>
+  <p class="big">04-6666-7777</p>
+  <p>テイクアウト・お問い合わせは電話で</p>
+  <p>OPEN: 7:00~22:00(L.O 21:00)</p>
+  <div>
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href=""><i class="fab fa-facebook-square"></i></a>
+  </div>
+  <small>&copy; Cafe de PARIS. All Right reserved</small>
+</footer>
+</body>
+</html>
+  
