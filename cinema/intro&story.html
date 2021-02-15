@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>アラジン　実写映画 |イントロダクション＆ストーリー</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+        $('.list-mv01').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+        $(this).stop().addClass('mv01');
+        }
+        // else{
+        // $(this).stop().removeClass('mv01');
+        // }
+        });
+        });
+    </script>
+    
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/logo1.png" alt="アラジン　実写映画　ロゴ"></a>
+    <nav class="gnav">
+        <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="intro&story.html" class="introstory--">INTRODUCTION &amp; STORY</a></li>
+            <li><a href="cast.html">CAST</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="intro-story">
+    <section id="intro" class=" list-mv01">
+        <img src="images/face2.png" class="face2" alt="アラジン　実写映画　イントロダクション">
+        <img src="images/sec1.png" class="sec11" alt="アラジン　実写映画　イントロダクション">
+        <div class="intro-txt">
+            <h1>イントロダクション</h1>
+            <p>1992年に公開されたディズニー・アニメーション映画『アラジン』は、主題歌の「ホール・ニュー・ワールド」が、アカデミー賞(R)歌曲賞を受賞し、ディズニー・アニメーション映画の中でも超大ヒットを記録しました。国や世代を超えて愛され続けてきた、この『アラジン』が27年の時を経て完全実写化！監督は、「シャーロック・ホームズ」シリーズ（09, 11）や「キング・アーサー」（17）など、音楽とスピーディーなアクション・ドラマの融合を真骨頂とするガイ・リッチー、もちろん音楽は世界的なレジェンド、アラン・メンケンが新旧の歌で物語に命を吹き込んでいます。主役のアラジンを演じるのはエジプト出身の俳優、メナ・マスード、社会の様々な理不尽と立ち向かう現代的な女性像が観客を魅了したジャスミン役には、イギリス出身の女優ナオミ・スコットが大抜擢。さらに、コミカルで楽しい歌「フレンド・ライク・ミー」も大人気の“ランプの魔人”ジーニーを、ハリウッド最強のエンターテイナー、ウィル・スミスが演じ、世界中で大きな話題となりました。</p>
+        </div>
+    </section>
+    <section id="story" class=" list-mv01">
+        <div class="story-txt">
+            <a id="story1"></a>
+            <h1>STORY</h1>
+            <p>世代を超えて愛され続ける『アラジン』をディズニーが空前のスケールで実写映画化！
+                貧しくも清らかな心を持ち、人生を変えたいと願っている青年アラジンが巡り合ったのは、王宮の外の世界での自由を求める王女ジャスミンと、“3つの願い”を叶えることができる“ランプの魔人”ジーニー。果たして3人はこの運命の出会いによって、それぞれの“本当の願い”に気づき、それを叶えることはできるのか？
+                胸躍る“冒険アクション”と、身分を超えた“真実の愛”を描いた、すべての人に贈る究極のエンターテイメント。</p>
+            <img src="images/face1.png" class="face" alt="アラジン　実写映画　ストーリー">
+            </div>
+        <img src="images/sec2.png" class="sec22" alt="アラジン　実写映画　ストーリー">
+        
+        </section>
+</main>
+<footer>
+    <p>copyright 2020 「アラジン」制作委員会</p>
+</footer>
+</body>
+</html>

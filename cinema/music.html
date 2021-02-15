@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>アラジン　実写映画|MUSIC</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+        $('.list-mv01').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+        $(this).stop().addClass('mv01');
+        }
+        // else{
+        // $(this).stop().removeClass('mv01');
+        // }
+        });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/logo1.png" alt="アラジン　実写映画　ロゴ"></a>
+    <nav class="gnav">
+        <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="intro&story.html">INTRODUCTION &amp; STORY</a></li>
+            <li><a href="cast.html">CAST</a></li>
+            <li><a href="music.html" class="musicmusic--">MUSIC</a></li>
+        </ul>        
+    </nav>
+</header>
+<main id="music">
+   <h4 class="list-mv01">サウンドトラックを紹介</h4>
+   <h5 class="list-mv01">ホール・ニュー・ワールド(A Whole New World )</h5>
+   <iframe  class="list-mv01"width="560" height="315" src="https://www.youtube.com/embed/eitDnP0_83k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <p class="list-mv01">
+        アラジンと言えばこの曲！
+        アラジンの主題歌で、アカデミー賞歌曲賞、ゴールデングローブ賞主題歌賞、
+        そしてグラミー賞最優秀楽曲賞(’94)を受賞した世界中で愛されている曲。
+        この曲は、アラジンとジャスミンが魔法の絨毯に乗って大空を飛ぶという名シーン。
+    </p>
+    <h5 class="list-mv01">スピーチレス（Speechless)</h5>
+    <iframe class="list-mv01" width="560" height="315" src="https://www.youtube.com/embed/mw5VIEIvuMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="list-mv01">
+        ジャスミンが歌う曲。この曲はアニメにはなかったので注目された方が多かったかと思う。
+        この曲は、大臣ジャファーの罠で閉じ込められそうになったジャスミンが、兵士の抵抗しているシーン。
+        映画では、女の人の社会性への訴えが強く感じられるのでインパクトのある曲。
+    </p>
+    <h5 class="list-mv01">アリ王子のお通り（Prince Ali）</h5>
+    <iframe class="list-mv01" width="560" height="315" src="https://www.youtube.com/embed/TQgId_4CQyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="list-mv01">
+        この曲はアラジンがジーニーの魔法で「アリ王子」になって、ジャスミンに会いに行く重要なシーン。
+        これからの苦難も知らず、「ジャスミンに会える！」とドキドキしながら楽しく、歌って踊る曲。
+        アラジンがイメージしている王子像を歌詞にしているので内容が愉快。
+    </p>
+</main>
+<footer>
+    <p>copyright 2020 「アラジン」制作委員会</p>
+</footer>
+</body>
+</html>
