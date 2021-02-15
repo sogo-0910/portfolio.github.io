@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>小松崎壮悟のポートフォリオ</title>
+
+</head>
+<body>
+
+
+    <header class="pc-header">
+        <h1><a href="index.html">SOUGO</a></h1>
+
+        <nav id="g-nav">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="index.html#pc-profile">PROFILE</a></li>
+                <li><a href="index.html#works">WORKS</a></li>
+                <li><a href="index.html#skill">SKILL</a></li>
+                <li><a href="index.htmlmailto:sougo.komatsuzaki@gmail.com">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="mobile-header">
+        <h1><a href="index.html">SOUGO</a></h1>
+
+        <div class="header-right">
+          <div class="navToggle">
+            <span></span><span></span><span></span><span>menu</span>
+          </div>
+        
+          <nav class="globalMenuSp">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="index.html#mobile-profile">PROFILE</a></li>
+                <li><a href="index.html#works">WORKS</a></li>
+                <li><a href="index.html#mobile-skill">SKILL</a></li>
+                <li><a href="index.htmlmailto:sougo.komatsuzaki@gmail.com">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main class="work-page">
+        <h2>アラジン映画サイト</h2>
+        <div class="flex">
+            <img src="img/works-cinema.jpg" alt="小松崎壮悟ポートフォリオ作品集 ポートフォリオサイト">
+            <div class="text">
+                <p class="period">制作期間: 2週間</p>
+                <p class="texttext">アラジン映画サイトを作りました。 <br>
+                    実写版アラジンのポップな感じを出したかったので青・紫・ピンク・黄色を使ってカジュアルな感じにしました。<br>
+                    トップページでは面白さを出したかったので、アラジンとジーニーが動くようにしました。<br>
+                    JavaScript・Jqueryを使用して様々なアニメーションをつけています。<br>
+                    レスポンシブ対応になっているのでIPad・スマートフォンでも見れるようになっています。
+                </p>
+                <p class="period">SKILL</p>
+                <div class="skill-img">
+                    <img src="img/skill-ps.png" alt="skill">
+                    <img src="img/skill-html.png" alt="skill">
+                    <img src="img/skill-css.png" alt="skill">
+                    <img src="img/skill-js.png" alt="skill">
+                    <img src="img/skill-jq.png" alt="skill">
+    
+                </div>
+
+                <p class="btn2"><a href="cinema/index.html" target="_blank" class="work-a2">View all</a></p>
+
+            </div>
+            
+    
+        </div>
+        
+
+    </main>
+     
+        
+
+    <footer>
+        <small>&copy; Komatsuzaki Sougo. All Rights Reserved.</small>
+    </footer>
+
+
+    <div id="loader-bg" class="is-hide">
+        <div id="loader" class="is-hide">
+            <p>
+                <img src="img/loading.gif" width="64" height="64"><br>
+                NOW LOADING
+            </p>
+        </div>
+    </div>
+    <script>
+        var bg = document.getElementById('loader-bg'),
+        loader = document.getElementById('loader');
+        bg.classList.remove('is-hide');
+        loader.classList.remove('is-hide');
+
+        window.addEventListener('load', stopload);
+
+        setTimeout('stopload()',10000);
+
+        function stopload(){
+        bg.classList.add('fadeout-bg');
+        loader.classList.add('fadeout-loader');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/top.js"></script>
+    <script src="js/work-tag.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script src="js/fadein.js"></script>
+</body>
+</html>
