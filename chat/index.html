@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CHATアプリ</title>
+</head>
+<body>
+    <h1>チャットアプリ</h1>
+    <div class="wrap">
+        <div id="output"></div>
+        <div class="send">
+
+            <div class="message">コメントの中に記入して送信して下さい!</div>
+            <div class="flex">
+                <input type="text" id="username" placeholder="name" class="name-send">
+                <button id="send">send</button>
+            </div>
+            <div>
+                <textarea id="text" rows="5" placeholder="content" class="text-send"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>

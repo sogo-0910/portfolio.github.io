@@ -1,0 +1,191 @@
+@media (min-width: 600px) {    
+    body {
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    h1 {
+        width: 600px;
+        font-size: 40px;
+        height: 60px;
+        margin: 0 auto;
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+        background-color: rgb(0, 225, 255);
+        position: fixed;
+        position: relative;
+        top: 0;
+    }
+
+    .wrap {
+        width: 600px;
+        height: calc(100vh - 60px);
+        margin: 0 auto;
+        background-color: rgb(0, 225, 255,0.4);
+        position: relative;
+        
+    }
+    .send {
+        /* position: absolute;
+        bottom: 0; */
+        position: fixed;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    button {
+        width: 50px;
+        height: 30px;
+        background-color: rgb(0, 225, 255);
+        color: #fff;
+        border: rgb(0, 225, 255);
+    }
+    .name-send {
+        width: 550px;
+        height: 30px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .text-send {
+        width: 600px;
+        height: 250px;
+        padding: 0;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    .name {
+        width: auto;
+        height: 20px;
+        font-size: 16px;
+        margin: 0 10px;
+        color:  rgb(148, 148, 148);
+    }
+    .text {
+        /* width: auto;
+        height: auto; */
+        background-color: #ffffff;
+        border-radius: 50px;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0 10px 30px 10px;
+        color: #000000;
+        word-wrap: break-word;
+    }
+    #output {
+        overflow: scroll;
+        border: 2px solid #ccc;
+        width: 100%;
+        margin: 0 0 0 0;
+        height: calc(100vh - 280px);
+        box-sizing: border-box;
+    }
+    .message {
+        display: none;
+        border: rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+        padding: 5px 10px;
+        background-color: rgb(255, 172, 172);
+        font-size: 20px;
+        font-weight: bold;
+    } 
+}
+
+
+@media (min-width: 300px) and (max-width: 600px) { 
+    body {
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 28px;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        background-color: rgb(0, 225, 255);
+        position: fixed;
+        position: relative;
+        top: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: calc(100vh - 40px);
+        margin: 0 auto;
+        background-color: rgb(0, 225, 255,0.4);
+        position: relative;
+        
+    }
+    .send {
+        width: 100%;
+        height: 200px;
+        bottom: 0;
+        position: fixed;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    button {
+        width: 50px;
+        height: 30px;
+        background-color: rgb(0, 225, 255);
+        color: #fff;
+        border: rgb(0, 225, 255);
+    }
+    .name-send {
+        width: calc(100% - 50px);
+        height: 30px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .text-send {
+        width: 100%;
+        height: 210px;
+        padding: 0;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    .name {
+        width: auto;
+        height: 20px;
+        font-size: 16px;
+        margin: 0 10px;
+        color:  rgb(148, 148, 148);
+    }
+    .text {
+        background-color: #ffffff;
+        border-radius: 50px;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0 10px 30px 10px;
+        color: #000000;
+        word-wrap: break-word;
+        overflow: scroll;
+        border: 2px solid #ccc;
+    }
+    #output {
+        overflow: scroll;
+        border: 2px solid #ccc;
+        width: 100%;
+        margin: 0 0 0 0;
+        height: calc(100vh - 240px);
+        box-sizing: border-box;
+    }
+    .message {
+        display: none;
+        border: rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+        padding: 5px 10px;
+        background-color: rgb(255, 172, 172);
+        font-size: 20px;
+        font-weight: bold;
+    } 
+}

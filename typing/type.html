@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ラグビータイピングゲーム</title>
+</head>
+<body id="top">
+    <header>
+        <div><img src="img/logo.png" alt="logo"></div>
+    </header>
+
+    <h1 id="h1">このゲームはラグビー用語を知りながらタイピングも学べます。<br>
+        下のSTARTボタンを押して始めてください。</h1>
+    <button id="btn" onclick="set()">START</button>
+    <p id="text"></p>
+    <!-- <p id="target">Click to Start</p> -->
+    <p id="result"></p>
+    <p id="time"></p>
+
+    <button type="button" name="button" id="restart" onclick="reload()">最初に戻る</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
